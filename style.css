@@ -9,12 +9,14 @@ a{
     color: black;
     text-decoration: none;
     font-weight: 600;
+    
 }
 a:hover{
     color: #3785FC;
     text-decoration: underline;
     
 }
+
 
 .avatar{
     width: 300px;
@@ -37,6 +39,18 @@ a:hover{
 .information{
     margin-left: 90px;
 }
+
+@media(max-width:900px){
+    .info{
+        display: block;
+        text-align: center;
+       
+    }
+    .information{
+        margin: 0;
+    }
+}
+
 .services{
     margin-top: 300px;
     border: radius 15px;
@@ -119,16 +133,46 @@ a:hover{
 
 .contact{
     display: flex;
+    position: relative;
 }
 
 .contact > div{
+    
     margin-right: 7px;
     width: 33%;
     box-sizing:border-box;
     text-align: center;
     margin-bottom: 20px;
+    height: 50px;
+    padding: 0;
+    
+    
+    
     
 }
+
+@media(max-width:900px){
+    .contact > div{
+        margin-bottom: -5px;
+        padding: 0;
+        display: block;
+        width: 100%;
+
+        
+        
+    }
+    .contact{
+        display: block;
+        text-align: center;
+    }
+}
+
+/* @media (){
+    .contact > div{
+        font-size: 10px;
+        display: block;
+    }
+} */
 
 .button{
     background-color:#5383F9;
@@ -141,4 +185,28 @@ a:hover{
 
 .button:hover{
     opacity: 0.9;
+}
+
+.callback{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color:white;
+    opacity: 75%;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.callback:hover{
+    opacity: 95%;
+}
+
+.phone-icon{
+    position: static;
+    width: 40px;
+    height: 40px;
+    margin: 13px;
 }
