@@ -2,14 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
         <title>Кирилл Ужанов</title>
     </head>
     <body>
         <div class="container">
             
             <div class="info">
-                <div><img src="kirill.jpg" alt="Ужанов Кирилл" class="avatar"></div>
+                <div><img src="image/kirill.jpg" alt="Ужанов Кирилл" class="avatar"></div>
                 <div class="information">
                     <h1>Ужанов Кирилл</h1>
                     <p> <b>Люблю путешествовать, обучаться чему-то новому и заниматься спортом</b> </p>
@@ -26,17 +27,17 @@
                     <div class="social">
                         <a href="https://vk.com/uzhanow" target="_blank">VK</a>
                         |
-                        <a href="Instagramm" target="_blank">Instagramm</a>
+                        <a href="https://instagram.com/uzhanov_k" target="_blank">Instagram</a>
                         |
-                        <a href="Telegramm" target="_blank">Telegramm</a>
+                        <a href="https://t.me/uzhanow" target="_blank">Telegram</a>
                     </div>
                     <div class="phone">
                         <b>Phone:</b>
-                         <a href="tel:+7 (952) 460-39-28">+7 (952) 460-39-28</a>
+                        <a href="tel:+7 (952) 460-39-28">+7 (952) 460-39-28</a> 
                     </div>
                     <div class="mail">
                         <b>email:</b>
-                        <a href="mailto:uzhanow@yandex.ru">uzhanow@yandex.ru</a>
+                        <a href="mailto:uzhanow@yandex.ru">uzhanow@yandex.ru</a>                 
                     </div>  
                 </div>
             </div>  
@@ -84,13 +85,44 @@
                    
                     <div class="form-group">
                         <label for="message">Ваше сообщение:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите ваше сообщение..."></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите ваше сообщение..." ></textarea>
                     </div>
                      
                     <input class="button" type="submit" value="Отправить">
                 </form>
             </div>
+            <div class="callback">
+                <a href="#modal"><img src="image/phone.png" alt="Иконка телефона" class="phone-icon"></a>
+            </div>
+            <div id = modal class="modal-overlay">
+                <a href="#" class="modal-area"></a>
+                <div class="modal-window">
+                    <div class="modal-header">
+                        <div class="modal-title">Связь со мной</div>
+                        <a href="##"><div class="modal-close">&times;</div></a>
+                    </div>
+                    <div class="modal-body">
+                        <p>Со мной можно связаться:</p>
+                        <ul>
+                            <li> по телефону <a href="tel:+7 (952) 460-39-28">+7 (952) 460-39-28</a></li>
+                            <li> в  <a href="https://t.me/uzhanow" target="_blank">Telegramm</a></li>
+                            <li> написать на email  <a href="mailto:uzhanow@yandex.ru">uzhanow@yandex.ru</a></li>
+                        </ul>
+                        
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </div>
+            </div>
+                
+            
+            
         </div>
+    <!-- <script src="base.js"></script> 
+    <script src="plagins/modal.js"></script>    -->
     <script src="mail.js"></script>
+    <!-- <script src="index.js"></script>  -->
     </body>
 </html>
